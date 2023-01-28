@@ -20,29 +20,19 @@ class _PageOneState extends State<PageOne> {
           children: [
             Text(indexViewState.activityModel.activity.toString()),
             Text(indexViewState.activityModel.activity.toString()),
-            Text("ok"),
-            Text("ok"),
-            Text("ok"),
-            Text("ok"),
-            Text("ok"),
             ElevatedButton(
                 onPressed: () {
-                  Get.back();
-
                   ///[Alternative of Navigator.pop(context);]
+                  Get.back();
                 },
                 child: Text('Home')),
-
-                
             ///////////////////////[obx checking]////////////////////////////////
             ElevatedButton(
                 onPressed: () {
                   indexViewState.incremenFunction();
                 },
                 child: Text('Get Data')),
-            Obx(
-              () => Text(indexViewState.counter.toString()),
-            )
+            Obx(() => Text(indexViewState.counter.toString()))
           ],
         ),
       ),

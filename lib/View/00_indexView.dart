@@ -15,7 +15,8 @@ class IndexView extends StatefulWidget {
 class _IndexViewState extends State<IndexView> {
   ///[using ViewState]
   final indexState = Get.put(IndexViewState());
-    ///[Another Method ViewState Handling ; Alternative OF Get.Put()]
+
+  ///[Another Method ViewState Handling ; Alternative OF Get.Put()]
   //IndexViewState indexState = Get.find();
   @override
   Widget build(BuildContext context) {
@@ -77,7 +78,9 @@ class _IndexViewState extends State<IndexView> {
               style: TextButton.styleFrom(backgroundColor: Colors.pink[200]),
               onPressed: () {
                 ///[Push To Next Page]
-                Get.to(() => PageOne());
+                Get.to(() => PageOne(),
+                    duration: Duration(seconds: 2),
+                    transition: Transition.zoom);
                 ////[Push and Replacement]
                 // Get.off(PageOne());
               },
