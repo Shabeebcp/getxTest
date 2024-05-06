@@ -1,6 +1,3 @@
-import 'dart:developer';
-
-import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:testgetxtest/Model/activity_model.dart';
 import 'package:testgetxtest/Services/Check/ICheckService.dart';
